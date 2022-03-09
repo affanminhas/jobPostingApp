@@ -19,7 +19,6 @@ class _SignUpState extends State<SignUp> {
           padding:
           const EdgeInsets.only(top: 70, left: 27, bottom: 59, right: 27),
           child: ListView(
-            // crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text(
                 "Let's sign you up",
@@ -129,7 +128,7 @@ class _SignUpState extends State<SignUp> {
 
 
               //const Spacer(),
-              SizedBox(
+              const SizedBox(
                 height: 80,
               ),
               GestureDetector(
@@ -170,6 +169,4 @@ class _SignUpState extends State<SignUp> {
           )),
     );
   }
-
-  void onSignUpPress() {}
 }

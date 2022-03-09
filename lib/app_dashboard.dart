@@ -23,7 +23,7 @@ class _DashboardState extends State<Dashboard> {
           height: 60,
           width: 60,
           child: FloatingActionButton(
-            backgroundColor: Color(0xFFE5E5E5),
+            backgroundColor: const Color(0xFFE5E5E5),
             onPressed: () {
               Navigator.of(context)
                   .push<JobPostData>(
@@ -43,7 +43,7 @@ class _DashboardState extends State<Dashboard> {
             ),
           ),
         ),
-        backgroundColor: Color(0xFF191720),
+        backgroundColor: const Color(0xFF191720),
         body: Padding(
           padding: const EdgeInsets.only(
               top: 75,
@@ -64,7 +64,7 @@ class _DashboardState extends State<Dashboard> {
                       fontFamily: 'Poppins',
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Container(
                     child: IconButton(
                       onPressed: () {
@@ -177,9 +177,6 @@ class _DashboardState extends State<Dashboard> {
                 children: [
                   IconButton(
                     onPressed: () {
-                      // setState(() {
-                      //   items.removeAt(index);
-                      // });
                       Navigator.of(context)
                           .push<JobPostData>(MaterialPageRoute(
                               builder: (_) => EditJobScreen(
@@ -203,8 +200,7 @@ class _DashboardState extends State<Dashboard> {
                         items.removeAt(index);
                       });
                     },
-                    icon: new Image.asset("images/delete_icon.png"),
-                    //icon: const Icon(Icons.delete_outlined, color: Colors.red,size: 25),
+                    icon: Image.asset("images/delete_icon.png"),
                   )
                 ],
               ),
